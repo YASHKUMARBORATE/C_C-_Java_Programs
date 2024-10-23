@@ -1,0 +1,28 @@
+marvellous
+import java.io.*;
+import java.util.*;
+
+class program503 {
+    public static void main(String[] args) throws Exception {
+
+        Scanner sobj = new Scanner(System.in);
+        System.out.println("----Marvellous packer unpacker CUI Module----");
+
+        System.out.println("Enter file name that you want open:");
+        String File_Name = sobj.nextLine();
+
+        File fobj = new File(File_Name);
+
+        boolean bret = fobj.createNewFile();
+
+        if (fobj.exists()) 
+        {
+
+            System.out.println("file is present");
+        }
+         else 
+        {
+            System.out.println("there is no file");
+        }
+    }
+}
